@@ -607,14 +607,14 @@ CONFIG_SCHEMA = cv.Schema(
             state_class=STATE_CLASS_MEASUREMENT,
         ),
         cv.Optional(CONF_CHARGING_POWER): sensor.sensor_schema(
-            unit_of_measurement=UNIT_Wh,
+            unit_of_measurement=UNIT_WATT,
             icon=ICON_EMPTY,
             accuracy_decimals=2,
             device_class=DEVICE_CLASS_ENERGY,
             state_class=STATE_CLASS_TOTAL,
         ),
         cv.Optional(CONF_DISCHARGING_POWER): sensor.sensor_schema(
-            unit_of_measurement=UNIT_Wh,
+            unit_of_measurement=UNIT_WATT,
             icon=ICON_EMPTY,
             accuracy_decimals=2,
             device_class=DEVICE_CLASS_ENERGY,
